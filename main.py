@@ -35,5 +35,6 @@ def main():
 
     print("Smoke test passed.")
 
+
 if __name__ == "__main__":
     main()
