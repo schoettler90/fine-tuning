@@ -7,4 +7,4 @@ that can be later used in Ollama.
 This project uses `uv` for dependency management.
 - **Install dependencies:** `uv sync`
 - **Run scripts:** `uv run <script_name>.py` (e.g., `uv run main.py`)
-- **Add packages:** `uv add <package_name>`
+- **Add packages:** `uv add <package_name>`/
