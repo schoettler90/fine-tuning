@@ -32,8 +32,11 @@ explicit = true
 [tool.uv]
 # xformers requires CUDA and OpenMP — skip it on macOS (MPS uses PyTorch's built-in kernels)
 override-dependencies = [
-    "xformers; sys_platform != 'darwin'",
+    "xformers; sys_platform == 'linux'",
 ]
+
+[tool.uv.extra-build-dependencies]
+xformers = ["torch"]
 
 [tool.uv.sources]
 torch = [
